@@ -12,9 +12,26 @@ Made with C++, ANTLR-4
 
 I built a SimpleIR to x86 assembly compiler for a class project. As far as compilers go, this is on the easier side, since both languages use a similar line-by-line syntax. Both languages are effectively a set of "rules" that text must follow, to assemble a working program. Both have function prologues and function epilogues. Both use the same math operations. Both use jumping to specific labels. 
 
-Assembly code is made according to the [x86-64 System V ABI](https://wiki.osdev.org/System_V_ABI) (Application Binary Interface). This standard lays out the stack frame This tells us what each register is used for, and if contents should be preserved between function calls. 
-
 Like you and your coworker, who speak different languages but do the same job. All you're doing is translating the words.
+
+Assembly code is made according to the [x86-64 System V ABI](https://wiki.osdev.org/System_V_ABI) (Application Binary Interface). The stack trends downward.
+
+<img src="images/x64_frame_nonleaf.png"><img/>
+
+The ABI standardizes the stack frame and it's contents. From top to bottom: 
+1. Arguments
+2. Return address
+3. Saved %RBP
+4. Saved %RBX
+5. Local variables
+6. Padding
+7. Red Zone
+
+It also tells us how stacks should behave:
+- What is each register used for?
+- Should contents be preserved between function calls? (%RBP, %RBX)
+- How many arguments are passed via registers?
+- How many arguments are passed via stack parameters?
 
 ## Syntax trees
 
