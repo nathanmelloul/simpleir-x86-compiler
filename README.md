@@ -3,6 +3,10 @@
 Translating human-understandable code into something the machine can use is difficult. It's been a thorn in every programmer's side since the beginning of time. 
 
 The answer? A shit ton of set theory. Whoever came up with it is very smart.
+```css
+Made with C++, ANTLR-4
+```
+
 
 ## All about grammar
 
@@ -70,11 +74,14 @@ And this isn't even half of it! We haven't:
 
 Understandably, nobody wants to write in assembly. Setting up each stack frame is a pain in the ass. This is a problem our compiler will solve.
 
-<!-- ## Gallery -->
-<img src="images/compiler1.png"><img/>
-<img src="images/compiler2.png"><img/>
-<img src="images/compiler3.png"><img/>
-<img src="images/compiler4.png"><img/>
-<img src="images/compiler5.png"><img/>
-<img src="images/compiler6.png"><img/>
-<img src="images/compiler7.png"><img/>
+<br>
+
+## Codegen
+
+<img src="images/terminal1.png"><img/>
+<img src="images/terminal2.png"><img/>
+<img src="images/terminal3.png"><img/>
+<img src="images/terminal4.png"><img/>
+<img src="images/terminal5.png"><img/>
+<img src="images/terminal6.png"><img/>
+<img src="images/terminal7.png"><img/>
