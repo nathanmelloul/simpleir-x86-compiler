@@ -33,7 +33,7 @@ It also tells us how stacks should behave:
 - How many arguments are passed via stack parameters?
 
 ## Syntax trees
-<img src="images/ast2.png" width="45%" /> <img src="images/ast1.png" width="45%" /><br>
+<img src="images/ast2.png" width="48%" /> <img src="images/ast1.png" width="48%" /><br>
 [Credit: Stackoverflow](https://stackoverflow.com/questions/1888854/what-is-the-difference-between-an-abstract-syntax-tree-and-a-concrete-syntax-tre), [Credit: Researchgate. Accessed 22 Oct 2026](https://www.researchgate.net/figure/Abstract-syntax-tree-of-the-while-loop_fig1_228792639)
 
 We can create our own rules. Function start must come before function end. Local variables must be declared before parameters. Arithmetic operations must happen between two "operands". Arithmetic operations include a symbol (%, +, -, /, asterisk).
