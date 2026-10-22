@@ -12,6 +12,8 @@ Made with C++, ANTLR-4
 
 I built a SimpleIR to x86 assembly compiler for a class project. As far as compilers go, this is on the easier side, since both languages use a similar line-by-line syntax. Both languages are effectively a set of "rules" that text must follow, to assemble a working program. Both have function prologues and function epilogues. Both use the same math operations. Both use jumping to specific labels. 
 
+Assembly code is made according to the [x86-64 System V ABI](https://wiki.osdev.org/System_V_ABI) (Application Binary Interface). This standard lays out the stack frame This tells us what each register is used for, and if contents should be preserved between function calls. 
+
 Like you and your coworker, who speak different languages but do the same job. All you're doing is translating the words.
 
 ## Syntax trees
